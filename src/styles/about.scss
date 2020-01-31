@@ -1,0 +1,82 @@
+.greetings-block {
+  font-size: 30px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  top: 30%;
+  position: absolute;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 40px;
+  color: #9c9c9c;
+  animation: show-after-typist 1s ease;
+  -webkit-animation: show-after-typist 1s ease;
+  z-index: 1000;
+
+  &__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 45px;
+    padding: 0 40px;
+
+    &:before {
+      content: '<';
+      left: 0;
+    }
+
+    &:after {
+      content: '/>';
+      position: absolute;
+      right: 0;
+    }
+
+    &:after, &:before {
+      position: absolute;
+      top: 0;
+
+      font-size: 42px;
+      line-height: 40px;
+
+      -webkit-animation-name: opacity;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    &__text {
+      display: inline;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      right: 50px;
+    }
+
+    &__list {
+      margin-top: 0;
+      padding-left: 0;
+      text-align: left;
+      list-style: none;
+
+      padding-right: 210px;
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+
+      &__item {
+        line-height:40px;
+        margin:0;
+      }
+    }
+  }
+}
+
