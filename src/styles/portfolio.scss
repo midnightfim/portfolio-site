@@ -1,0 +1,23 @@
+@import "animations.scss";
+
+.matrix-block{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    animation: show-after-typist 1s ease;
+    -webkit-animation: show-after-typist 1s ease;
+    display: none;
+  }
+
+  &_canvas{
+    position: fixed;
+  }
+}

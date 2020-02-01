@@ -5,6 +5,7 @@ export default function Footer() {
 
     return (
         <footer className="footer">
+            <div style={{height: '100vh', width: '100vw'}}>jbhk</div>
             <div className="container">
                 <div className="footer_icons">
                     <a href="https://api.whatsapp.com/send?phone=79119367192">
