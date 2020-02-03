@@ -82,3 +82,66 @@
   }
 }
 
+.numbers-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  &_item{
+    padding: 100px 40px;
+  }
+  .numbers-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > * {
+      margin: 10px;
+    }
+    &_icon {
+      width: 35px;
+      height: 35px;
+    }
+    &_title, &_equal {
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 12px;
+    }
+    &_number {
+      font-size: 14px;
+    }
+  }
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  :nth-child(2) {
+       font-weight: 600;
+  }
+  &_skills {
+    margin-top: 100px;
+  }
+}
+
+.pay-skill {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    margin: 0 !important;
+    p{
+      text-align: center;
+      line-height: 27px;
+      font-weight: 400;
+    }
+  }
+}

@@ -145,10 +145,6 @@
   position: relative;
   left: 0;
 
-  @media (min-width: 1200px) {
-    width: 100vw;
-  }
-
   &_icons{
     display: flex;
     justify-content: center;
